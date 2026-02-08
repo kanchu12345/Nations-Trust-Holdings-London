@@ -19,7 +19,8 @@
 body {
     font-family: 'Inter', sans-serif;
     color: var(--color-navy);
-    background-color: white;
+    background-color: #f0f9ff;
+    /* Light blue-white (sky-50) */
 }
 
 h1,
@@ -81,8 +82,23 @@ h6 {
 header a img {
     border-radius: 12px;
     /* Soften corners */
-    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 1);
-    /* White glow to blend edges */
-    background-color: white;
-    /* Ensure background is solid white behind logo */
+    box-shadow: 0 0 15px 10px rgba(240, 249, 255, 1);
+    /* Light blue glow to blend edges */
+    background-color: #f0f9ff;
+    /* Light blue background behind logo */
+}
+
+/* Override white backgrounds to light blue */
+.bg-white {
+    background-color: #e0f2fe !important;
+}
+
+/* Sections with white background */
+section {
+    background-color: #f0f9ff;
+}
+
+/* Main content areas */
+main {
+    background-color: #f0f9ff;
 }
