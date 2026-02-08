@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Nations Trust Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B1120',
+                        royal: '#3b82f6',
+                        gold: '#fbbf24',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                text-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+            }
+
+            50% {
+                text-shadow: 0 0 40px rgba(59, 130, 246, 0.8), 0 0 80px rgba(59, 130, 246, 0.5);
+            }
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-navy antialiased min-h-screen flex flex-col">
+    <!-- Header -->
+    <header
+        class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="image/logo.png" alt="Nations Trust Holdings"
+                    class="h-20 w-auto group-hover:scale-105 transition">
+                <div class="hidden sm:block">
+                    <h1
+                        class="text-navy font-bold text-3xl leading-none tracking-tight group-hover:text-royal transition text-shadow-sm">
+                        Nations Trust</h1>
+                    <p class="text-sm text-royal tracking-[0.2em] uppercase font-bold mt-1">Holdings London</p>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Vacancies</a>
+                <a href="contact.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Contact
+                    Us</a>
+                <a href="about.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">About
+                    Us</a>
+
+                <a href="contact.html"
+                    class="ml-4 px-6 py-2.5 bg-gradient-to-r from-navy to-royal text-white rounded-full hover:shadow-xl transform hover:-translate-y-0.5 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> <span>Chat Now</span>
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn"
+                class="lg:hidden text-navy text-2xl focus:outline-none hover:text-royal transition"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 text-center font-bold text-lg">
+                <a href="index.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Vacancies</a>
+                <a href="contact.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Contact
+                    Us</a>
+                <a href="about.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">About
+                    Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center pt-32 pb-20 px-6">
+        <div class="text-center max-w-4xl mx-auto">
+            <!-- Decorative Elements -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-royal/10 rounded-full blur-[100px]"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/10 rounded-full blur-[100px]"></div>
+            </div>
+
+            <!-- Clock Icon -->
+            <div class="mb-10">
+                <div
+                    class="w-32 h-32 mx-auto bg-gradient-to-br from-royal to-blue-800 rounded-full flex items-center justify-center shadow-2xl animate-bounce">
+                    <i class="fas fa-clock text-white text-6xl"></i>
+                </div>
+            </div>
+
+            <!-- Coming Soon Text -->
+            <h1 class="text-7xl md:text-9xl font-serif font-black text-white mb-6 animate-pulse-glow">
+                Coming Soon
+            </h1>
+
+            <p class="text-2xl md:text-3xl text-slate-400 mb-12 font-light">
+                We're working hard to bring you something amazing!
+            </p>
+
+            <!-- Divider -->
+            <div class="w-32 h-1.5 bg-gradient-to-r from-royal via-gold to-royal mx-auto rounded-full mb-12"></div>
+
+            <!-- Description -->
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto mb-16 leading-relaxed">
+                This service page is currently under development. Our team is crafting the perfect experience for you.
+                In the meantime, explore our available services or contact us directly.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="index.html"
+                    class="px-10 py-5 bg-gradient-to-r from-royal to-blue-700 text-white font-bold text-lg rounded-full hover:shadow-2xl hover:shadow-royal/30 transition transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="contact.html"
+                    class="px-10 py-5 bg-gold text-navy font-bold text-lg rounded-full hover:bg-white transition shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy/80 text-white py-8 border-t border-slate-800">
+        <div class="text-center">
+            <p class="text-slate-500 text-sm mb-2">© 2026 Nations Trust Holdings London Pvt Ltd.</p>
+            <p class="infinite-credit-lock text-sm text-slate-600">
+                Website Designed & Developed by
+                <a href="https://web.facebook.com/profile.php?id=100082101311247" target="_blank"
+                    class="text-gold hover:text-white transition font-bold">Infinite Design</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
