@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nations Trust Holdings - London | Global Migration Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B1120',
+                        royal: '#3b82f6',
+                        gold: '#fbbf24',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header -->
+    <header
+        class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <!-- Logo area -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="image/logo.png" alt="Nations Trust Holdings"
+                    class="h-20 w-auto group-hover:scale-105 transition">
+                <div class="hidden sm:block">
+                    <h1
+                        class="text-navy font-bold text-3xl leading-none tracking-tight group-hover:text-royal transition text-shadow-sm">
+                        Nations Trust</h1>
+                    <p class="text-sm text-royal tracking-[0.2em] uppercase font-bold mt-1">Holdings London</p>
+                </div>
+            </a>
+
+            <!-- Navigation: Home -> Vacancies -> Contact -> About -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html"
+                    class="text-royal hover:text-navy transition border-b-2 border-gold pb-1 font-bold">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Vacancies</a>
+                <a href="contact.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Contact
+                    Us</a>
+                <a href="about.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">About
+                    Us</a>
+
+                <a href="contact.html"
+                    class="ml-4 px-6 py-2.5 bg-gradient-to-r from-navy to-royal text-white rounded-full hover:shadow-xl transform hover:-translate-y-0.5 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> <span>Chat Now</span>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                class="lg:hidden text-navy text-2xl focus:outline-none hover:text-royal transition">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 text-center font-bold text-lg">
+                <a href="index.html" class="text-royal bg-blue-50 py-2 rounded-lg">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Vacancies</a>
+                <a href="contact.html" class="text-navy hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Contact
+                    Us</a>
+                <a href="about.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">About
+                    Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-navy text-white">
+        <!-- Background Overlay/Image -->
+        <div class="absolute inset-0 bg-gradient-to-br from-navy/95 via-blue-900/90 to-royal/80 z-10"></div>
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40">
+        </div>
+
+        <div class="relative z-20 container mx-auto px-6 text-center fade-in-up">
+            <p
+                class="text-gold uppercase tracking-[0.2em] font-bold text-sm mb-6 inline-block border border-gold/30 px-4 py-1 rounded-full bg-navy/50 backdrop-blur-sm">
+                UK | Europe | Canada | Australia | Worldwide</p>
+            <h1 class="text-5xl md:text-7xl font-serif font-black mb-6 leading-tight drop-shadow-lg">
+                Your Trusted Global <br> <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-gold">Migration
+                    Partner</span>
+            </h1>
+            <p class="text-slate-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Professional visa consultancy, education services, and corporate solutions tailored for your global
+                aspirations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="px-8 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-yellow-400 transition shadow-lg hover:shadow-gold/50 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="far fa-calendar-check"></i> Book a Consultation
+                </a>
+                <a href="#services"
+                    class="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-xl hover:bg-white/20 transition flex items-center justify-center gap-2">
+                    Explore Opportunities <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-navy mb-4">Our Core Services</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-navy to-royal mx-auto rounded-full"></div>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto text-lg">Providing end-to-end solutions for individuals
+                    and businesses worldwide.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6 group-hover:bg-gradient-to-r group-hover:from-navy group-hover:to-royal group-hover:text-white transition shadow-inner">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-royal transition">Visa & Migration
+                    </h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Skilled Worker, Student, Business, Investor,
+                        and Visit visas for UK, Canada, Australia & Europe.</p>
+                    <a href="services.html"
+                        class="text-royal font-bold text-sm hover:text-navy flex items-center gap-2 group-hover:gap-3 transition-all">Learn
+                        More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6 group-hover:bg-gradient-to-r group-hover:from-navy group-hover:to-royal group-hover:text-white transition shadow-inner">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-royal transition">Education Services
+                    </h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">University admissions, career counseling, and
+                        student pathways to top intl. institutions.</p>
+                    <a href="services.html"
+                        class="text-royal font-bold text-sm hover:text-navy flex items-center gap-2 group-hover:gap-3 transition-all">Learn
+                        More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6 group-hover:bg-gradient-to-r group-hover:from-navy group-hover:to-royal group-hover:text-white transition shadow-inner">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-royal transition">Corporate Advisory
+                    </h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Business setup, recruitment solutions,
+                        compliance, and international partnerships.</p>
+                    <a href="services.html"
+                        class="text-royal font-bold text-sm hover:text-navy flex items-center gap-2 group-hover:gap-3 transition-all">Learn
+                        More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6 group-hover:bg-gradient-to-r group-hover:from-navy group-hover:to-royal group-hover:text-white transition shadow-inner">
+                        <i class="fas fa-fighter-jet"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-royal transition">Air & Sea Cargo</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Worldwide import/export logistics, customs
+                        clearance, and freight forwarding.</p>
+                    <a href="services.html"
+                        class="text-royal font-bold text-sm hover:text-navy flex items-center gap-2 group-hover:gap-3 transition-all">Learn
+                        More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6 group-hover:bg-gradient-to-r group-hover:from-navy group-hover:to-royal group-hover:text-white transition shadow-inner">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-royal transition">Vehicle
+                        Import/Export</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">European, Japanese & Chinese vehicles, spare
+                        parts, and luxury mobility solutions.</p>
+                    <a href="services.html"
+                        class="text-royal font-bold text-sm hover:text-navy flex items-center gap-2 group-hover:gap-3 transition-all">Learn
+                        More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6 group-hover:bg-gradient-to-r group-hover:from-navy group-hover:to-royal group-hover:text-white transition shadow-inner">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-3 group-hover:text-royal transition">Global Recruitment
+                    </h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Connecting skilled professionals with top
+                        employers across the UK, Europe & Middle East.</p>
+                    <a href="vacancies.html"
+                        class="text-royal font-bold text-sm hover:text-navy flex items-center gap-2 group-hover:gap-3 transition-all">View
+                        Jobs <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-navy text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-royal/20 rounded-full blur-[100px] -z-0"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[100px] -z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-serif font-bold mb-6 leading-tight">Why Choose <br><span
+                            class="text-gold">Nations Trust?</span></h2>
+                    <p class="text-slate-300 mb-10 leading-relaxed text-lg">
+                        Established with a vision to bridge global opportunities, we operate with strong ethical
+                        standards, transparency, and a client-centric approach. Our experienced leadership team ensures
+                        reliable and compliant services.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition">
+                            <i class="fas fa-check-circle text-gold text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl text-white">London-Based</h4>
+                                <p class="text-sm text-slate-400 mt-1">Headquartered in UK with global reach.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition">
+                            <i class="fas fa-check-circle text-gold text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl text-white">Transparent</h4>
+                                <p class="text-sm text-slate-400 mt-1">Ethical standards and clear fees.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition">
+                            <i class="fas fa-check-circle text-gold text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl text-white">High Success</h4>
+                                <p class="text-sm text-slate-400 mt-1">Expert guidance for visa approvals.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition">
+                            <i class="fas fa-check-circle text-gold text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl text-white">Global Support</h4>
+                                <p class="text-sm text-slate-400 mt-1">Offices in UK, USA, Australia, & more.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about.html"
+                        class="inline-block mt-12 px-8 py-4 border-2 border-white/20 rounded-xl hover:bg-white hover:text-navy hover:border-white transition font-bold tracking-wide">More
+                        About Us</a>
+                </div>
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=1932&auto=format&fit=crop"
+                        alt="London Office"
+                        class="rounded-3xl shadow-2xl border-4 border-white/10 group-hover:scale-[1.02] transition duration-500">
+                    <div
+                        class="absolute -bottom-10 -left-10 bg-white text-navy p-8 rounded-2xl shadow-xl hidden md:block border-b-4 border-royal">
+                        <p class="text-5xl font-black text-royal">80+</p>
+                        <p class="text-sm font-bold uppercase tracking-wider text-slate-600 mt-1">Years of Legacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-20 bg-gradient-to-r from-royal to-blue-800 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-serif font-bold mb-6">Start Your Migration Journey Today</h2>
+            <p class="mb-10 text-blue-100 text-lg">Contact our expert team for a personalized consultation and take the
+                first step towards your global future.</p>
+            <a href="contact.html"
+                class="px-10 py-5 bg-gold text-navy font-black text-lg rounded-full hover:bg-white hover:text-royal transition shadow-2xl hover:shadow-white/20 inline-flex items-center gap-3 transform hover:-translate-y-1">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-20 pb-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-3xl font-serif font-bold mb-6 text-white">Nations Trust Holdings</h3>
+                <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                    A diversified international services company providing professional solutions across visa
+                    consultancy, education, and corporate advisory.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-royal hover:text-white transition text-slate-400"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-royal hover:text-white transition text-slate-400"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-royal hover:text-white transition text-slate-400"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white">Quick Links</h4>
+                <ul class="space-y-3 text-slate-400">
+                    <li><a href="index.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> Home</a></li>
+                    <li><a href="vacancies.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> Vacancies</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> Contact Us</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white">Contact Info</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>Admirals Way, London,<br>E14 9XL, United Kingdom</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>No.128, High-Level Road, Nugegoda, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+94 71 404 5900</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>info@nationstrust.uk</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 text-center">
+            <p class="text-slate-500 text-sm mb-2">© 2026 Nations Trust Holdings London Pvt Ltd. All Rights Reserved.
+            </p>
+
+            <!-- LOCKED DESIGN CREDIT -->
+            <p class="infinite-credit-lock text-sm text-slate-600">
+                Website Designed & Developed by
+                <a href="https://web.facebook.com/profile.php?id=100082101311247" target="_blank"
+                    class="text-gold hover:text-white transition font-bold">Infinite Design</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

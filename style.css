@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* More vibrant "Attractive" Palette */
+    --color-navy: #0B1120;
+    /* Darker, richer navy */
+    --color-royal: #3b82f6;
+    /* Brighter, more vibrant blue (Tailwind blue-500) */
+    --color-gold: #fbbf24;
+    /* Warm vibrant gold (Amber-400) */
+    --color-soft-gray: #f8fafc;
+    /* Very light cool gray */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-navy);
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Custom Utilities */
+.text-navy {
+    color: var(--color-navy);
+}
+
+.bg-navy {
+    background-color: var(--color-navy);
+}
+
+.text-royal {
+    color: var(--color-royal);
+}
+
+.bg-royal {
+    background-color: var(--color-royal);
+}
+
+.bg-gold {
+    background-color: var(--color-gold);
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+/* Animation Utils */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Locked Footer Credit */
+.infinite-credit-lock {
+    user-select: none;
+    pointer-events: auto;
+    font-weight: bold;
+}
+
+/* Logo Refinement: Blur/Softening of Outline */
+header a img {
+    border-radius: 12px;
+    /* Soften corners */
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 1);
+    /* White glow to blend edges */
+    background-color: white;
+    /* Ensure background is solid white behind logo */
+}

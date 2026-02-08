@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Nations Trust Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B1120',
+                        royal: '#3b82f6',
+                        gold: '#fbbf24',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white antialiased">
+    <!-- Header (Same as Index) -->
+    <header
+        class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="image/logo.png" alt="Nations Trust Holdings"
+                    class="h-20 w-auto group-hover:scale-105 transition">
+                <div class="hidden sm:block">
+                    <h1
+                        class="text-navy font-bold text-3xl leading-none tracking-tight group-hover:text-royal transition text-shadow-sm">
+                        Nations Trust</h1>
+                    <p class="text-sm text-royal tracking-[0.2em] uppercase font-bold mt-1">Holdings London</p>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Vacancies</a>
+                <a href="contact.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Contact
+                    Us</a>
+                <a href="about.html"
+                    class="text-royal hover:text-navy transition border-b-2 border-gold pb-1 font-bold">About Us</a>
+
+                <a href="contact.html"
+                    class="ml-4 px-6 py-2.5 bg-gradient-to-r from-navy to-royal text-white rounded-full hover:shadow-xl transform hover:-translate-y-0.5 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> <span>Chat Now</span>
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn"
+                class="lg:hidden text-navy text-2xl focus:outline-none hover:text-royal transition"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 text-center font-bold text-lg">
+                <a href="index.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Vacancies</a>
+                <a href="contact.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Contact
+                    Us</a>
+                <a href="about.html" class="text-royal bg-blue-50 py-2 rounded-lg">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- Intro Section -->
+        <section class="max-w-7xl mx-auto px-6 mb-20 fade-in-up">
+            <div class="text-center mb-16">
+                <p class="text-royal font-bold uppercase tracking-widest mb-2 text-sm">Who We Are</p>
+                <h1 class="text-4xl md:text-5xl font-serif font-black text-navy mb-6">Nations Trust Holdings London</h1>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-navy to-royal mx-auto rounded-full mb-8"></div>
+                <p class="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+                    Nations Trust Holdings London Pvt Ltd is a diversified international services company providing
+                    professional solutions across visa consultancy, education services, travel & tourism, migration
+                    support, air ticketing, vehicle import/export, and corporate advisory.
+                    <br><br>
+                    Established with a vision to bridge global opportunities, the company operates with strong ethical
+                    standards, transparency, and a client-centric approach. We empower individuals and businesses by
+                    connecting them to international opportunities.
+                </p>
+            </div>
+
+            <!-- Mission/Vision Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-slate-50 p-10 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-royal text-3xl mb-6">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-3xl font-serif font-bold text-navy mb-4">Our Vision</h3>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        To become a globally trusted organization that empowers individuals and businesses by connecting
+                        them to international education, employment, travel, and investment opportunities.
+                    </p>
+                </div>
+                <div class="bg-navy text-white p-10 rounded-3xl shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-royal/20 rounded-full blur-3xl -z-0"></div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-gold text-3xl mb-6">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="text-3xl font-serif font-bold mb-4">Our Mission</h3>
+                        <ul class="space-y-4 opacity-90 text-lg">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-gold mr-3 mt-1"></i> Deliver
+                                professional, transparent, and compliant services.</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-gold mr-3 mt-1"></i> Provide
+                                end-to-end solutions tailored to client needs.</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-gold mr-3 mt-1"></i>
+                                Maintain international standards and ethical practices.</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-gold mr-3 mt-1"></i> Build
+                                long-term relationships based on trust.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="bg-slate-50 py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-serif font-bold text-center text-navy mb-16">Our Global Leadership</h2>
+
+                <!-- International Team Image -->
+                <div class="mb-20 fade-in-up">
+                    <img src="image/leadership_team_wide.png" alt="Nations Trust Global Leadership Team"
+                        class="w-full h-[500px] object-cover rounded-3xl shadow-2xl hover:shadow-royal/20 transition duration-500">
+                    <p class="text-center text-slate-500 mt-6 italic">Our dedicated global leadership team committed to
+                        your success.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navy text-white pt-20 pb-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-3xl font-serif font-bold mb-6 text-white">Nations Trust Holdings</h3>
+                <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                    A diversified international services company providing professional solutions across visa
+                    consultancy, education, and corporate advisory.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-royal hover:text-white transition text-slate-400"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-royal hover:text-white transition text-slate-400"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-royal hover:text-white transition text-slate-400"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white">Quick Links</h4>
+                <ul class="space-y-3 text-slate-400">
+                    <li><a href="index.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> Home</a></li>
+                    <li><a href="vacancies.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> Vacancies</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> Contact Us</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-xs text-royal"></i> About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white">Contact Info</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>Admirals Way, London,<br>E14 9XL, United Kingdom</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>No.128, High-Level Road, Nugegoda, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+94 71 404 5900</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>info@nationstrust.uk</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 text-center">
+            <p class="text-slate-500 text-sm mb-2">© 2026 Nations Trust Holdings London Pvt Ltd. All Rights Reserved.
+            </p>
+            <p class="infinite-credit-lock text-sm text-slate-600">
+                Website Designed & Developed by
+                <a href="https://web.facebook.com/profile.php?id=100082101311247" target="_blank"
+                    class="text-gold hover:text-white transition font-bold">Infinite Design</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

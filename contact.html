@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Nations Trust Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B1120',
+                        royal: '#3b82f6',
+                        gold: '#fbbf24',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 antialiased">
+    <!-- Header (Same) -->
+    <header
+        class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="image/logo.png" alt="Nations Trust Holdings"
+                    class="h-20 w-auto group-hover:scale-105 transition">
+                <div class="hidden sm:block">
+                    <h1
+                        class="text-navy font-bold text-3xl leading-none tracking-tight group-hover:text-royal transition text-shadow-sm">
+                        Nations Trust</h1>
+                    <p class="text-sm text-royal tracking-[0.2em] uppercase font-bold mt-1">Holdings London</p>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">Vacancies</a>
+                <a href="contact.html"
+                    class="text-royal hover:text-navy transition border-b-2 border-gold pb-1 font-bold">Contact Us</a>
+                <a href="about.html"
+                    class="text-slate-600 hover:text-royal transition hover:border-b-2 border-transparent pb-1 hover:font-bold">About
+                    Us</a>
+
+                <a href="contact.html"
+                    class="ml-4 px-6 py-2.5 bg-gradient-to-r from-navy to-royal text-white rounded-full hover:shadow-xl transform hover:-translate-y-0.5 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> <span>Chat Now</span>
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn"
+                class="lg:hidden text-navy text-2xl focus:outline-none hover:text-royal transition"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 text-center font-bold text-lg">
+                <a href="index.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Home</a>
+                <a href="vacancies.html"
+                    class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">Vacancies</a>
+                <a href="contact.html" class="text-royal bg-blue-50 py-2 rounded-lg">Contact Us</a>
+                <a href="about.html" class="text-slate-600 hover:text-royal hover:bg-slate-50 py-2 rounded-lg">About
+                    Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-5xl font-serif font-bold text-navy mb-4">Get in Touch</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-navy to-royal mx-auto rounded-full"></div>
+                <p class="mt-6 text-slate-600 max-w-2xl mx-auto text-lg">Contact our professional team via WhatsApp or
+                    visit our global offices.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form (WHATSAPP INTEGRATED) -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl h-full border border-slate-100">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-navy">Send WhatsApp Inquiry</h3>
+                            <p class="text-sm text-slate-500">Replies typically in 5 minutes</p>
+                        </div>
+                    </div>
+
+                    <form id="whatsappForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-navy mb-2">Full Name</label>
+                                <input type="text" id="name" required
+                                    class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-navy mb-2">Phone</label>
+                                <input type="tel" id="mobile" required
+                                    class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-navy mb-2">Address</label>
+                            <input type="text" id="address" required
+                                class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-navy mb-2">Job Vacancy</label>
+                                <select id="vacancy"
+                                    class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition">
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Care Assistant">Care Assistant</option>
+                                    <option value="Construction Worker">Construction Worker</option>
+                                    <option value="Warehouse Operative">Warehouse Operative</option>
+                                    <option value="Hotel Receptionist">Hotel Receptionist</option>
+                                    <option value="Truck Driver">Truck Driver</option>
+                                    <option value="Food Packer">Food Packer</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-navy mb-2">Country to Apply</label>
+                                <select id="country"
+                                    class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition">
+                                    <option value="Any">Any Destination</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Europe">Europe</option>
+                                    <option value="Middle East">Middle East</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-navy mb-2">Other Details / Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-4 bg-green-600 text-white font-bold rounded-xl hover:bg-green-700 transition shadow-lg hover:shadow-green-200 flex items-center justify-center gap-3 text-lg">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Global Offices -->
+                <div class="space-y-6 overflow-y-auto max-h-[800px] pr-2 custom-scrollbar">
+                    <!-- Sri Lanka (Highlighted) -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-gold ring-1 ring-gold/20">
+                        <h4 class="font-bold text-xl text-navy flex items-center gap-2"><img
+                                src="https://flagcdn.com/lk.svg" class="w-6 h-4 object-cover shadow-sm"> Sri Lanka
+                            Office</h4>
+                        <div class="mt-4 space-y-2 text-sm text-slate-600">
+                            <p class="font-semibold text-navy"><i class="fas fa-phone text-gold mr-2"></i> +94 71 404
+                                5900</p>
+                            <div class="h-px bg-slate-100 my-2"></div>
+                            <p>No.128, High-Level Road, Nugegoda 0500</p>
+                            <p>No.252/A, Galle Road, Colombo 0400</p>
+                            <p>No.85/6, Colombo Road, Negombo 10500</p>
+                        </div>
+                    </div>
+
+                    <!-- UK -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-navy">
+                        <h4 class="font-bold text-xl text-navy flex items-center gap-2"><img
+                                src="https://flagcdn.com/gb.svg" class="w-6 h-4 object-cover shadow-sm"> United Kingdom
+                            (HQ)</h4>
+                        <div class="mt-4 space-y-2 text-sm text-slate-600">
+                            <p>Admirals Way, London, E14 9XL</p>
+                            <p>Bolton, London</p>
+                        </div>
+                    </div>
+
+                    <!-- USA -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-royal">
+                        <h4 class="font-bold text-xl text-navy flex items-center gap-2"><img
+                                src="https://flagcdn.com/us.svg" class="w-6 h-4 object-cover"> USA Offices</h4>
+                        <div class="mt-4 space-y-2 text-sm text-slate-600">
+                            <p><strong>Washington DC:</strong> 20004, United States</p>
+                            <p><strong>Florida:</strong> Dr.CH, Orlando, Florida 32801</p>
+                            <p><strong>New York:</strong> Prof. Sam.BL, New York</p>
+                        </div>
+                    </div>
+
+                    <!-- Canada -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-600">
+                        <h4 class="font-bold text-xl text-navy flex items-center gap-2"><img
+                                src="https://flagcdn.com/ca.svg" class="w-6 h-4 object-cover"> Canada</h4>
+                        <div class="mt-4 space-y-2 text-sm text-slate-600">
+                            <p>ON M9V 2H4, Canada</p>
+                            <p>ON L6R 0W3, Canada</p>
+                        </div>
+                    </div>
+
+                    <!-- UAE -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-600">
+                        <h4 class="font-bold text-xl text-navy flex items-center gap-2"><img
+                                src="https://flagcdn.com/ae.svg" class="w-6 h-4 object-cover"> UAE</h4>
+                        <div class="mt-4 space-y-2 text-sm text-slate-600">
+                            <p>Barsha Heights, Dubai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy text-white pt-20 pb-10 border-t border-slate-800">
+        <!-- Footer Content (Same as other pages) -->
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-3xl font-serif font-bold mb-6 text-white">Nations Trust Holdings</h3>
+                <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                    A diversified international services company providing professional solutions across visa
+                    consultancy, education, and corporate advisory.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-xl mb-6 text-white">Contact Info</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>Admirals Way, London</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>No.128, High-Level Road, Nugegoda, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0 text-gold">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+94 71 404 5900</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 text-center">
+            <p class="text-slate-500 text-sm mb-2">© 2026 Nations Trust Holdings London Pvt Ltd.</p>
+            <p class="infinite-credit-lock text-sm text-slate-600">
+                Website Designed & Developed by
+                <a href="https://web.facebook.com/profile.php?id=100082101311247" target="_blank"
+                    class="text-gold hover:text-white transition font-bold">Infinite Design</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // WhatsApp Integration Logic
+        document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // 1. Collect Data
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const address = document.getElementById('address').value;
+            const vacancy = document.getElementById('vacancy').value;
+            const country = document.getElementById('country').value;
+            const message = document.getElementById('message').value;
+
+            // 2. Generate Auto-Fields
+            const codeNumber = 'NTH-' + Math.floor(1000 + Math.random() * 9000); // Random 4-digit code
+            const now = new Date();
+            const dateTime = now.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' });
+
+            // 3. Format Message
+            const whatsappMessage = `
+*New Inquiry - Nations Trust Holdings*
+---------------------------------
+*Code Number:* ${codeNumber}
+*Date & Time:* ${dateTime}
+---------------------------------
+*Name:* ${name}
+*Mobile:* ${mobile}
+*Address:* ${address}
+*Interest:* ${vacancy}
+*Country:* ${country}
+---------------------------------
+*Message:*
+${message}
+            `.trim();
+
+            // 4. Construct URL
+            // Phone: 94714045900 (Sri Lanka)
+            const targetNumber = '94714045900';
+            const url = `https://wa.me/${targetNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // 5. Redirect
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+
+</html>
